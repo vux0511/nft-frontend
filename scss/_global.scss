@@ -1,0 +1,35 @@
+body {
+    font-family: $font-primary;
+    color: $white-color;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+    background-color: $background-primary;
+    font-size: 16px;
+}
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1050px;
+    padding: 0 115px;
+    margin: 0 auto;
+}
+.button {
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    padding: 19px 30px;
+    background-color: $purple-color;
+    line-height: 140%;
+    &-primary {
+    }
+    &-started {
+        color: $white-color;
+        padding: 19px 50px;
+    }
+}

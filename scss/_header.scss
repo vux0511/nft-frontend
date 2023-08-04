@@ -1,0 +1,46 @@
+.header {
+    margin-bottom: 80px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 34px 50px;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &-icon {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+        }
+        &-text {
+            width: 199.414px;
+            height: 19.8px;
+            flex-shrink: 0;
+            fill: $white-color;
+            padding-top: 5px;
+        }
+    }
+    &__menu {
+        display: flex;
+        height: 46px;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+    &__item {
+        padding: 0px 20px;
+    }
+    &__link {
+        color: $white-color;
+        text-decoration: none;
+        font-weight: 400;
+        text-align: center;
+        ion-icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
