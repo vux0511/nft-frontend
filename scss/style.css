@@ -476,7 +476,7 @@ body {
 .category__list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
 }
@@ -486,18 +486,24 @@ body {
   width: calc(25% - 30px);
 }
 .category__image {
-  background: url(https://cdn.dribbble.com/users/383277/screenshots/18156310/media/3878637f6386b2a90a1dabf928ab07cb.png?resize=1600x1200&vertical=center), lightgray 50%/cover no-repeat;
   width: 240px;
   height: 240px;
   object-fit: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.category__image-placehoder {
+  filter: blur(12px);
+  width: 240px;
+  height: 240px;
+  z-index: -1;
 }
 .category__icon {
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  position: absolute;
 }
 .category__name {
   background-color: #3b3b3b;

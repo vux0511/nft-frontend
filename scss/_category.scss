@@ -6,33 +6,34 @@
     &__list {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         gap: 30px;
         flex-wrap: wrap;
     }
     &__item {
         border-radius: 20px 20px 0px 0px;
-        // display: flex;
-        // align-items: center;
-        // flex-direction: column;
-        // justify-content: center;
         overflow: hidden;
         width: calc(25% - 30px);
     }
     &__image {
-        background: url(https://cdn.dribbble.com/users/383277/screenshots/18156310/media/3878637f6386b2a90a1dabf928ab07cb.png?resize=1600x1200&vertical=center),
-            lightgray 50% / cover no-repeat;
         width: 240px;
         height: 240px;
         object-fit: cover;
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+    }
+    &__image-placehoder {
+        filter: blur(12px);
+        width: 240px;
+        height: 240px;
+        z-index: -1;
     }
     &__icon {
         width: 100px;
         height: 100px;
-        object-fit: cover;
+        position: absolute;
     }
     &__name {
         background-color: $background-secondary;
