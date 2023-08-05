@@ -18,9 +18,9 @@ body {
     margin: 0 auto;
 }
 .button {
-    font-weight: 600;
     display: inline-flex;
     align-items: center;
+    font-weight: 600;
     gap: 12px;
     border-radius: 20px;
     padding: 19px 30px;
@@ -28,11 +28,15 @@ body {
     line-height: 140%;
     border: none;
     text-decoration: none;
+    padding: 19px 50px;
+    transition: all 0.3s ease;
+    &:hover {
+        transform: scale(0.97);
+    }
     &-primary {
     }
     &-started {
         color: $white-color;
-        padding: 19px 50px;
     }
     &-transparent {
         border: 2px solid $purple-color;
@@ -40,6 +44,16 @@ body {
         color: $white-color;
         ion-icon {
             color: $purple-color;
+            font-size: 22px;
+        }
+    }
+    &-bgwhite {
+        padding: 22px 50px;
+        background-color: $white-color;
+        color: $background-primary;
+        ion-icon {
+            color: $purple-color;
+            font-size: 22px;
         }
     }
 }
@@ -54,5 +68,122 @@ body {
     font-size: 22px;
     font-weight: 400;
     line-height: 160%;
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
+}
+
+.card {
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px 20px;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        align-self: stretch;
+    }
+    &__item {
+        border-radius: 20px 20px 0px 0px;
+        width: calc(25% - 20px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        color: $white-color;
+        text-decoration: none;
+        &:hover {
+            transform: scale(0.97);
+        }
+    }
+    &__image {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+    &__main {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        // align-items: flex-start;
+        // gap: 25px;
+        align-self: stretch;
+        background-color: $background-secondary;
+        border-radius: 0 0 20px 20px;
+    }
+    &__name {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 140%;
+        padding-bottom: 5px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+    }
+    &__author {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding-bottom: 20px;
+        color: $white-color;
+        text-decoration: none;
+        &-image {
+            width: 25px;
+            height: 25px;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+        &-name {
+            font-size: 14px;
+            line-height: 140%;
+            font-family: $font-secondary;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: $font-secondary;
+        &-left {
+            text-align: left;
+        }
+        &-right {
+            text-align: right;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        &-title {
+            font-size: 12px;
+            line-height: 110%;
+            color: $gray-color;
+            margin-bottom: 5px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+        &-price {
+            font-size: 14px;
+            line-height: 140%;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+        }
+    }
 }

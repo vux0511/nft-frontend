@@ -2,9 +2,11 @@
     margin-bottom: 120px;
     &__header {
         display: flex;
+        align-items: flex-end;
         justify-content: space-between;
     }
     &__list {
+        padding-top: 60px;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -21,6 +23,11 @@
         padding: 20px;
         background-color: $background-secondary;
         border-radius: 20px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover {
+            transform: scale(0.95);
+        }
     }
     &__image {
         max-width: 100%;

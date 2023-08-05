@@ -156,9 +156,9 @@ body {
 }
 
 .button {
-  font-weight: 600;
   display: inline-flex;
   align-items: center;
+  font-weight: 600;
   gap: 12px;
   border-radius: 20px;
   padding: 19px 30px;
@@ -166,10 +166,14 @@ body {
   line-height: 140%;
   border: none;
   text-decoration: none;
+  padding: 19px 50px;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  transform: scale(0.97);
 }
 .button-started {
   color: #ffffff;
-  padding: 19px 50px;
 }
 .button-transparent {
   border: 2px solid #a259ff;
@@ -178,6 +182,16 @@ body {
 }
 .button-transparent ion-icon {
   color: #a259ff;
+  font-size: 22px;
+}
+.button-bgwhite {
+  padding: 22px 50px;
+  background-color: #ffffff;
+  color: #2b2b2b;
+}
+.button-bgwhite ion-icon {
+  color: #a259ff;
+  font-size: 22px;
 }
 
 .headline {
@@ -191,7 +205,118 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 160%;
-  padding-bottom: 60px;
+}
+
+.card__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px 20px;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  align-self: stretch;
+}
+.card__item {
+  border-radius: 20px 20px 0px 0px;
+  width: calc(25% - 20px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  text-decoration: none;
+}
+.card__item:hover {
+  transform: scale(0.97);
+}
+.card__image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.card__main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  background-color: #3b3b3b;
+  border-radius: 0 0 20px 20px;
+}
+.card__name {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.card__author-image {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.card__author-name {
+  font-size: 14px;
+  line-height: 140%;
+  font-family: "Space Mono", sans-serif;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Space Mono", sans-serif;
+}
+.card__info-left {
+  text-align: left;
+}
+.card__info-right {
+  text-align: right;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.card__info-title {
+  font-size: 12px;
+  line-height: 110%;
+  color: #858584;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.card__info-price {
+  font-size: 14px;
+  line-height: 140%;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }
 
 .header {
@@ -404,9 +529,11 @@ body {
 }
 .topcreator__header {
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
 }
 .topcreator__list {
+  padding-top: 60px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -423,6 +550,11 @@ body {
   padding: 20px;
   background-color: #3b3b3b;
   border-radius: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.topcreator__item:hover {
+  transform: scale(0.95);
 }
 .topcreator__image {
   max-width: 100%;
@@ -513,6 +645,56 @@ body {
   font-weight: 600;
   line-height: 140%;
   text-align: center;
+}
+
+.more {
+  margin-bottom: 80px;
+}
+.more__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.highlight {
+  background-color: transparent;
+  background-image: url(https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/nft-highlight@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  height: auto;
+  min-height: 600px;
+}
+.highlight__bg {
+  background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, rgb(162, 89, 255) 100%);
+  width: 100%;
+  min-width: 1440px;
+}
+.highlight__container {
+  padding: 360px 195px 60px 195px;
+}
+.highlight__author {
+  padding: 10px 20px;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  line-height: 140%;
+  text-decoration: none;
+  color: #ffffff;
+}
+.highlight__author-image {
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+.highlight__title {
+  padding: 30px 0;
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 110%;
 }
 
 /*# sourceMappingURL=style.css.map */
