@@ -24,16 +24,21 @@ body {
     gap: 12px;
     border-radius: 20px;
     padding: 19px 30px;
-    background-color: $purple-color;
     line-height: 140%;
     border: none;
     text-decoration: none;
+    background-color: $purple-color;
+    font-family: $font-primary;
     padding: 19px 50px;
     transition: all 0.3s ease;
     &:hover {
-        transform: scale(0.97);
+        transform: scale(0.95);
     }
     &-primary {
+        &:hover {
+            transform: scale(0.95);
+            color: $white-color !important;
+        }
     }
     &-started {
         color: $white-color;
@@ -51,10 +56,19 @@ body {
         padding: 22px 50px;
         background-color: $white-color;
         color: $background-primary;
+
         ion-icon {
             color: $purple-color;
             font-size: 22px;
         }
+    }
+    &-subcribe {
+        color: $white-color;
+        ion-icon {
+            font-size: 18px;
+        }
+    }
+    @media (hover: hover) {
     }
 }
 
@@ -186,4 +200,8 @@ body {
             word-break: break-word;
         }
     }
+}
+
+.button {
+    cursor: pointer;
 }

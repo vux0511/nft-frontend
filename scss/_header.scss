@@ -36,11 +36,16 @@
     &__link {
         color: $white-color;
         text-decoration: none;
-        font-weight: 400;
+        font-weight: 500;
         text-align: center;
+        transition: all 0.3s ease;
+        font-size: 17px;
         ion-icon {
             width: 20px;
             height: 20px;
+        }
+        &:hover {
+            color: $purple-color;
         }
     }
 }
