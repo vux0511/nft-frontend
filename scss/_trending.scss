@@ -7,6 +7,7 @@
         margin-left: -30px;
         align-self: stretch;
         flex-wrap: wrap;
+        padding-top: 60px;
     }
     &__item {
         margin-left: 30px;
@@ -100,4 +101,41 @@
         }
     }
     // &.treding__author-image {}
+}
+
+@media screen and (max-width: 1024px) {
+    .trending {
+        &__image {
+            &-top {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__main {
+            &-item {
+                &:last-child {
+                    background-color: $purple-color;
+                    font-size: 18px;
+                    font-family: $font-secondary;
+                    font-weight: 700;
+                    line-height: 160%;
+                    text-align: center;
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+        &__name {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 140%;
+        }
+        &__author {
+            &-name {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 140%;
+            }
+        }
+    }
 }

@@ -161,7 +161,6 @@ body {
   font-weight: 600;
   gap: 12px;
   border-radius: 20px;
-  padding: 19px 30px;
   line-height: 140%;
   border: none;
   text-decoration: none;
@@ -333,6 +332,22 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 72px;
+  }
+  .button {
+    padding: 13px 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+  .button {
+    padding: 13px 30px;
+  }
+}
 .header {
   margin-bottom: 80px;
 }
@@ -375,7 +390,7 @@ body {
   font-weight: 500;
   text-align: center;
   transition: all 0.3s ease;
-  font-size: 17px;
+  font-size: 16px;
 }
 .header__link ion-icon {
   width: 20px;
@@ -385,6 +400,78 @@ body {
   color: #a259ff;
 }
 
+.menu-toggle {
+  font-size: 30px;
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding-top: 30px;
+  }
+  .header__logo {
+    width: 50px;
+    height: 50px;
+  }
+  .header__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 80%;
+    background-color: #3b3b3b;
+    z-index: 9999;
+    border-left: 1px solid #ccc;
+    transition: transform 0.25s linear;
+    transform: translateX(100%);
+    flex-direction: column;
+    display: block;
+    padding-top: 50px;
+  }
+  .header__list {
+    flex-direction: column;
+    display: block;
+  }
+  .header__item, .header__icon {
+    padding: 20px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header__link {
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .header__icon {
+    display: inline-block;
+  }
+  .header__icon-search {
+    padding-right: 30px;
+  }
+  .header ion-icon {
+    font-weight: 500;
+    line-height: 30px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  .is-active {
+    transform: translateX(0);
+  }
+  .menu-toggle {
+    display: inline-flex;
+    float: right;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .header {
+    margin-bottom: 40px;
+  }
+  .header__container {
+    padding: 15px 30px;
+  }
+}
 .banner {
   margin-bottom: 160px;
 }
@@ -395,6 +482,11 @@ body {
 }
 .banner__heading, .banner__image {
   width: 50%;
+}
+.banner__heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .banner__heading {
   max-width: 510px;
@@ -440,6 +532,60 @@ body {
   height: 510px;
 }
 
+@media screen and (max-width: 1024px) {
+  .banner {
+    margin-bottom: 120px;
+  }
+  .banner__title {
+    font-size: 38px;
+    line-height: 120%;
+  }
+  .banner__desc {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .banner__info-data {
+    font-size: 22px;
+    line-height: 160%;
+  }
+  .banner__info-title {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 400;
+  }
+  .banner__image-gif {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    margin-bottom: 80px;
+  }
+  .banner__container {
+    flex-direction: column;
+  }
+  .banner__heading, .banner__image {
+    width: 100%;
+  }
+  .banner__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 140%;
+    padding-bottom: 10px;
+  }
+  .banner__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    padding-bottom: 40px;
+  }
+  .banner__button {
+    display: block;
+    text-align: center;
+    width: 80%;
+  }
+}
 .trending {
   margin-bottom: 160px;
 }
@@ -450,6 +596,7 @@ body {
   margin-left: -30px;
   align-self: stretch;
   flex-wrap: wrap;
+  padding-top: 60px;
 }
 .trending__item {
   margin-left: 30px;
@@ -543,6 +690,32 @@ body {
   word-break: break-word;
 }
 
+@media screen and (max-width: 1024px) {
+  .trending__image-top {
+    width: 100%;
+    height: 100%;
+  }
+  .trending__main-item:last-child {
+    background-color: #a259ff;
+    font-size: 18px;
+    font-family: "Space Mono", sans-serif;
+    font-weight: 700;
+    line-height: 160%;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+  }
+  .trending__name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 140%;
+  }
+  .trending__author-name {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
 .topcreator {
   margin-bottom: 120px;
 }

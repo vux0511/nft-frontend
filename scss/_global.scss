@@ -23,7 +23,6 @@ body {
     font-weight: 600;
     gap: 12px;
     border-radius: 20px;
-    padding: 19px 30px;
     line-height: 140%;
     border: none;
     text-decoration: none;
@@ -204,4 +203,22 @@ body {
 
 .button {
     cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 72px;
+    }
+    .button {
+        padding: 13px 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
+    .button {
+        padding: 13px 30px;
+    }
 }
