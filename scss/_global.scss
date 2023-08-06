@@ -30,6 +30,7 @@ body {
     font-family: $font-primary;
     padding: 19px 50px;
     transition: all 0.3s ease;
+    color: $white-color;
     &:hover {
         transform: scale(0.95);
     }
@@ -220,5 +221,11 @@ body {
     }
     .button {
         padding: 13px 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile {
+        display: none;
     }
 }
