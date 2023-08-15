@@ -1,126 +1,126 @@
-.header {
-    margin-bottom: 80px;
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 34px 50px;
-    }
-    &__logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        &-icon {
-            width: 32px;
-            height: 32px;
-            flex-shrink: 0;
-        }
-        &-text {
-            width: 199.414px;
-            height: 19.8px;
-            flex-shrink: 0;
-            fill: $white-color;
-            padding-top: 5px;
-        }
-    }
-    &__menu {
-        display: flex;
-        height: 46px;
-        justify-content: center;
-        align-items: center;
-        gap: 12px;
-    }
-    &__item {
-        padding: 0px 20px;
-    }
-    &__link {
-        color: $white-color;
-        text-decoration: none;
-        font-weight: 500;
-        text-align: center;
-        transition: all 0.3s ease;
-        font-size: 16px;
-        ion-icon {
-            width: 20px;
-            height: 20px;
-        }
-        &:hover {
-            color: $purple-color;
-        }
-    }
-}
+// .header {
+//     margin-bottom: 80px;
+//     &__container {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         padding: 34px 50px;
+//     }
+//     &__logo {
+//         display: flex;
+//         align-items: center;
+//         gap: 10px;
+//         &-icon {
+//             width: 32px;
+//             height: 32px;
+//             flex-shrink: 0;
+//         }
+//         &-text {
+//             width: 199.414px;
+//             height: 19.8px;
+//             flex-shrink: 0;
+//             fill: $white-color;
+//             padding-top: 5px;
+//         }
+//     }
+//     &__menu {
+//         display: flex;
+//         height: 46px;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 12px;
+//     }
+//     &__item {
+//         padding: 0px 20px;
+//     }
+//     &__link {
+//         color: $white-color;
+//         text-decoration: none;
+//         font-weight: 500;
+//         text-align: center;
+//         transition: all 0.3s ease;
+//         font-size: 16px;
+//         ion-icon {
+//             width: 20px;
+//             height: 20px;
+//         }
+//         &:hover {
+//             color: $purple-color;
+//         }
+//     }
+// }
 
-.menu-toggle {
-    font-size: 30px;
-    display: none;
-}
+// .menu-toggle {
+//     font-size: 30px;
+//     display: none;
+// }
 
-@media screen and (max-width: 1023.98px) {
-    .header {
-        padding-top: 30px;
-        &__logo {
-            width: 50px;
-            height: 50px;
-        }
-        &__menu {
-            position: fixed;
-            top: 0;
-            right: 0;
-            height: 100%;
-            width: 80%;
-            background-color: $background-secondary;
-            z-index: 9999;
-            border-left: 1px solid #ccc;
-            transition: transform 0.25s linear;
-            transform: translateX(100%);
-            flex-direction: column;
-            display: block;
-            padding-top: 50px;
-        }
-        &__list {
-            flex-direction: column;
-            display: block;
-        }
-        &__item,
-        &__icon {
-            padding: 20px;
-            margin: 0 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        &__link {
-            display: block;
-            color: $white-color;
-            font-size: 20px;
-        }
-        &__icon {
-            display: inline-block;
-            &-search {
-                padding-right: 30px;
-            }
-        }
-        ion-icon {
-            font-weight: 500;
-            line-height: 30px;
-            cursor: pointer;
-            color: $white-color;
-        }
-    }
-    .is-active {
-        transform: translateX(0);
-    }
-    .menu-toggle {
-        display: inline-flex;
-        float: right;
-    }
-}
+// @media screen and (max-width: 1023.98px) {
+//     .header {
+//         padding-top: 30px;
+//         &__logo {
+//             width: 50px;
+//             height: 50px;
+//         }
+//         &__menu {
+//             position: fixed;
+//             top: 0;
+//             right: 0;
+//             height: 100%;
+//             width: 80%;
+//             background-color: $background-secondary;
+//             z-index: 9999;
+//             border-left: 1px solid #ccc;
+//             transition: transform 0.25s linear;
+//             transform: translateX(100%);
+//             flex-direction: column;
+//             display: block;
+//             padding-top: 50px;
+//         }
+//         &__list {
+//             flex-direction: column;
+//             display: block;
+//         }
+//         &__item,
+//         &__icon {
+//             padding: 20px;
+//             margin: 0 20px;
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//         }
+//         &__link {
+//             display: block;
+//             color: $white-color;
+//             font-size: 20px;
+//         }
+//         &__icon {
+//             display: inline-block;
+//             &-search {
+//                 padding-right: 30px;
+//             }
+//         }
+//         ion-icon {
+//             font-weight: 500;
+//             line-height: 30px;
+//             cursor: pointer;
+//             color: $white-color;
+//         }
+//     }
+//     .is-active {
+//         transform: translateX(0);
+//     }
+//     .menu-toggle {
+//         display: inline-flex;
+//         float: right;
+//     }
+// }
 
-@media screen and (max-width: 767.98px) {
-    .header {
-        margin-bottom: 40px;
-        &__container {
-            padding: 15px 30px;
-        }
-    }
-}
+// @media screen and (max-width: 767.98px) {
+//     .header {
+//         margin-bottom: 40px;
+//         &__container {
+//             padding: 15px 30px;
+//         }
+//     }
+// }

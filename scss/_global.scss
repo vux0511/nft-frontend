@@ -13,9 +13,9 @@ body {
     margin: 0 auto;
 }
 .container {
-    max-width: 1050px;
-    padding: 0 115px;
+    max-width: 1170px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .button {
     display: inline-flex;
@@ -226,4 +226,18 @@ body {
     .mobile {
         display: none;
     }
+}
+
+////////////////////////////////
+///
+///
+
+.button {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 15px 25px;
+    min-width: 100px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 32px;
 }
