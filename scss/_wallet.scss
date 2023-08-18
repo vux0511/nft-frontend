@@ -1,0 +1,14 @@
+.wallet {
+    padding: 150px 0;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px 115px;
+        width: 80%;
+    }
+    &__image {
+        width: 230px;
+    }
+}

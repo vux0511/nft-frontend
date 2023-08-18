@@ -241,3 +241,14 @@ body {
     display: inline-block;
     border-radius: 32px;
 }
+
+.text-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    background: linear-gradient(90deg, #69eacb 0%, #eaccf8 30%, #6654f1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
