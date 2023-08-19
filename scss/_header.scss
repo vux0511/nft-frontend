@@ -124,3 +124,47 @@
 //         }
 //     }
 // }
+
+.header {
+    padding: 30px 0;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        &-image {
+            width: 32px;
+            height: 32px;
+            object-fit: cover;
+        }
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    &__item {
+        &-link {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: normal;
+            transition: border-bottom 0.2s ease;
+            &:hover::after {
+                width: 100%;
+                // border-bottom: 1.5px solid white;
+            }
+        }
+        &-link::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 1.5px;
+            background: white;
+            transition: width 0.3s;
+        }
+    }
+}

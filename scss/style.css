@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html,
 body,
 div,
@@ -133,6 +129,10 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
   color: #ffffff;
@@ -142,6 +142,8 @@ body {
   text-transform: capitalize;
   background-color: #2b2b2b;
   font-size: 16px;
+  background-color: #1e2354;
+  font-family: "Poppins", sans-serif;
 }
 
 .wrapper {
@@ -156,219 +158,33 @@ body {
 }
 
 .button {
-  display: inline-flex;
-  align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 15px 55px;
+  display: block;
+  width: max-content;
   font-weight: 600;
-  gap: 12px;
-  border-radius: 20px;
-  line-height: 140%;
-  border: none;
-  text-decoration: none;
   background-color: #a259ff;
-  font-family: "Work Sans", sans-serif;
-  padding: 19px 50px;
   transition: all 0.3s ease;
   color: #ffffff;
+  border-radius: 60px;
+  border: none;
 }
 .button:hover {
   transform: scale(0.95);
 }
 .button-primary:hover {
-  transform: scale(0.95);
   color: #ffffff !important;
-}
-.button-started {
-  color: #ffffff;
 }
 .button-transparent {
   border: 2px solid #a259ff;
   background-color: transparent;
-  color: #ffffff;
 }
-.button-transparent ion-icon {
-  color: #a259ff;
-  font-size: 22px;
-}
-.button-bgwhite {
-  padding: 22px 50px;
-  background-color: #ffffff;
-  color: #2b2b2b;
-}
-.button-bgwhite ion-icon {
-  color: #a259ff;
-  font-size: 22px;
-}
-.button-subcribe {
-  color: #ffffff;
-}
-.button-subcribe ion-icon {
-  font-size: 18px;
-}
-
-.headline {
-  font-size: 38px;
-  font-weight: 600;
-  line-height: 120%;
-  padding-bottom: 10px;
-}
-
-.subhead {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 160%;
-}
-
-.card__list {
+.button-more {
+  margin: 0 auto;
+  margin-top: 50px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 30px 20px;
-  flex-wrap: wrap;
-  padding-top: 60px;
-  align-self: stretch;
-}
-.card__item {
-  border-radius: 20px 20px 0px 0px;
-  width: calc(25% - 20px);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  color: #ffffff;
-  text-decoration: none;
-}
-.card__item:hover {
-  transform: scale(0.97);
-}
-.card__image {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-.card__main {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-self: stretch;
-  background-color: #3b3b3b;
-  border-radius: 0 0 20px 20px;
-}
-.card__name {
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 140%;
-  padding-bottom: 5px;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
-}
-.card__author {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding-bottom: 20px;
-  color: #ffffff;
-  text-decoration: none;
-}
-.card__author-image {
-  width: 25px;
-  height: 25px;
-  object-fit: cover;
-  border-radius: 100%;
-}
-.card__author-name {
-  font-size: 14px;
-  line-height: 140%;
-  font-family: "Space Mono", sans-serif;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
-}
-.card__info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Space Mono", sans-serif;
-}
-.card__info-left {
-  text-align: left;
-}
-.card__info-right {
-  text-align: right;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.card__info-title {
-  font-size: 12px;
-  line-height: 110%;
-  color: #858584;
-  margin-bottom: 5px;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
-}
-.card__info-price {
-  font-size: 14px;
-  line-height: 140%;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
-}
-
-.button {
-  cursor: pointer;
-}
-
-@media screen and (max-width: 1024px) {
-  .container {
-    padding: 0 72px;
-  }
-  .button {
-    padding: 13px 40px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 0 30px;
-  }
-  .button {
-    padding: 13px 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .mobile {
-    display: none;
-  }
-}
-.button {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  padding: 15px 25px;
-  min-width: 100px;
-  text-align: center;
-  display: inline-block;
-  border-radius: 32px;
-}
-.button-collection {
-  font-size: 18px;
-  border-radius: 60px;
-  font-weight: 600;
-  width: calc(100% - 50px);
+  align-self: center;
+  justify-content: center;
 }
 
 .text-title {
@@ -380,6 +196,45 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.header {
+  padding: 30px 0;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo-image {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.header__item-link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  transition: border-bottom 0.2s ease;
+}
+.header__item-link:hover::after {
+  width: 100%;
+}
+.header__item-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1.5px;
+  background: white;
+  transition: width 0.3s;
 }
 
 .banner {
@@ -1057,54 +912,6 @@ body {
   padding-bottom: 40px;
 }
 
-body {
-  background-color: #1e2354;
-  font-family: "Poppins", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-.header {
-  padding: 30px 0;
-}
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header__logo-image {
-  width: 32px;
-  height: 32px;
-  object-fit: cover;
-}
-.header__menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-.header__item-link {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: normal;
-  transition: border-bottom 0.2s ease;
-}
-.header__item-link:hover::after {
-  width: 100%;
-}
-.header__item-link::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 1.5px;
-  background: white;
-  transition: width 0.3s;
-}
-
 .wallet {
   padding: 150px 0;
 }
@@ -1131,18 +938,20 @@ a {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   border-radius: 20px;
   padding: 16px;
-  gap: 20px;
+  gap: 15px;
   background: linear-gradient(155.14deg, rgba(0, 0, 0, 0) -2.13%, rgba(255, 255, 255, 0.15) 136.58%);
   filter: drop-shadow(rgba(0, 7, 72, 0.12) 0px 4px 49px);
   backdrop-filter: blur(7.5px);
   border: 1.5px solid rgba(255, 255, 255, 0.2);
   transition: all 0.5s ease;
-  height: 427px;
+  height: 380px;
 }
 .trending__card-image {
-  height: 250px;
+  height: 210px;
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
@@ -1217,10 +1026,12 @@ a {
   visibility: hidden;
   opacity: 0;
   transition: all 1 ease-in-out;
+  width: calc(100% - 110px);
+  text-align: center;
 }
 
 .trending__card-item:hover .trending__card-image {
-  height: 174.8px;
+  height: 134px;
 }
 
 .trending__card-item:hover .trending__button {
@@ -1232,7 +1043,6 @@ a {
   background-color: rgb(102, 84, 241);
   width: 50px;
   height: 50px;
-  margin-top: 30px;
   border-radius: 100rem;
   background: white;
 }

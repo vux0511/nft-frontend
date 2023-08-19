@@ -15,13 +15,12 @@
             href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap"
             rel="stylesheet"
         />
-        <!-- <link
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        /> -->
+        />
         <script
             type="module"
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -30,18 +29,23 @@
             nomodule
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
         ></script>
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
         <link rel="stylesheet" href="./scss/style.css" />
         <title>NFT Marketplace</title>
     </head>
     <body>
         <div class="wrapper">
-            <header class="header header__container">
-                <a href="index.html">
+            <section class="header">
+                <div class="container header__container">
                     <div class="header__logo">
                         <img
                             src="images/store-icon.svg"
                             alt=""
-                            class="header__logo-icon"
+                            class="header__logo-image"
                         />
                         <img
                             src="images/logo-text.svg"
@@ -49,833 +53,506 @@
                             class="header__logo-text"
                         />
                     </div>
-                </a>
-                <ul class="header__menu">
-                    <li class="header__item">
-                        <a href="#" class="header__link">Marketplace</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">Rankings</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">Connect a wallet</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link button button-primary"
-                            ><ion-icon name="person-outline"></ion-icon> Sign
-                            Up</a
-                        >
-                    </li>
-                </ul>
-                <ion-icon name="menu-outline" class="menu-toggle"></ion-icon>
-            </header>
+                    <ul class="header__menu">
+                        <li class="header__item">
+                            <a href="" class="header__item-link">
+                                Marketplace
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">
+                                Collection
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link"> Community </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="" class="header__item-link">Create</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="button button-primary">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
             <section class="banner">
                 <div class="container banner__container">
                     <div class="banner__heading">
                         <h1 class="banner__title">
-                            Discover digital art & Collect NFTs
+                            Remove borders with
+                            <span
+                                >NFTs <img src="images/line.png" alt=""
+                            /></span>
+                            share art freely.
                         </h1>
                         <div class="banner__desc">
-                            NFT marketplace UI created with Anima for Figma.
-                            Collect, buy and sell art from more than 20k NFT
-                            artists.
+                            Discover the power of NFTs for a unique digital
+                            experience.
                         </div>
-                        <div class="banner__image mobile">
-                            <img
-                                src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/files/heroanimationtransparentbck-2.gif"
-                                alt=""
-                                class="banner__image-gif"
-                            />
-                        </div>
-                        <a
-                            href="#"
-                            class="banner__started button button-started banner__button"
-                        >
-                            <ion-icon name="rocket-outline"></ion-icon> Get
-                            Started
-                        </a>
-                        <div class="banner__info">
-                            <div class="banner__info-item">
-                                <div class="banner__info-data">240k+</div>
-                                <div class="banner__info-title">Total Sale</div>
-                            </div>
-                            <div class="banner__info-item">
-                                <div class="banner__info-data">100k+</div>
-                                <div class="banner__info-title">Auctions</div>
-                            </div>
-                            <div class="banner__info-item">
-                                <div class="banner__info-data">240k+</div>
-                                <div class="banner__info-title">Artists</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="banner__image tablet">
-                        <img
-                            src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/files/heroanimationtransparentbck-2.gif"
-                            alt=""
-                            class="banner__image-gif"
-                        />
-                    </div>
-                </div>
-            </section>
-            <section class="about">
-                <!-- <div class="container">
-                    <div class="trending__header">
-                        <div class="headline">Trending Collection</div>
-                        <div class="subhead">
-                            Checkout our weekly updated trending collection.
-                        </div>
-                    </div>
-                    <div class="trending__list">
-                        <div class="trending__item">
-                            <img
-                                src="https://i.seadn.io/gcs/files/60c41d23511421fc5b259f1132057846.jpg?auto=format&dpr=1&w=1000"
-                                alt=""
-                                class="trending__image-top"
-                            />
-                            <div class="trending__main">
-                                <img
-                                    src="https://i.seadn.io/gcs/files/60c41d23511421fc5b259f1132057846.jpg?auto=format&dpr=1&w=1000"
-                                    alt=""
-                                    class="trending__main-item"
-                                />
-                                <img
-                                    src="https://i.seadn.io/gcs/files/60c41d23511421fc5b259f1132057846.jpg?auto=format&dpr=1&w=1000"
-                                    alt=""
-                                    class="trending__main-item"
-                                />
-                                <div class="trending__main-item">1025+</div>
-                            </div>
-                            <div class="trending__info">
-                                <div class="trending__name">DSGN Animals</div>
-                                <div class="trending__author">
-                                    <img
-                                        src="https://i.seadn.io/gcs/files/60c41d23511421fc5b259f1132057846.jpg?auto=format&dpr=1&w=1000"
-                                        alt=""
-                                        class="trending__author-image"
-                                    />
-                                    <div class="trending__author-name">
-                                        MrFox
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="trending__item">
-                            <img
-                                src="https://i.seadn.io/gcs/files/60c41d23511421fc5b259f1132057846.jpg?auto=format&dpr=1&w=1000"
-                                alt=""
-                                class="trending__image-top"
-                            />
-                            <div class="trending__main">
-                                <img
-                                    src="https://i.seadn.io/gcs/files/60c41d23511421fc5b259f1132057846.jpg?auto=format&dpr=1&w=1000"
-                                    alt=""
-                                    class="trending__main-item"
-                                />
-                                <img
-                                    src="https://i.seadn.io/gcs/files/60c41d23511421fc5b259f1132057846.jpg?auto=format&dpr=1&w=1000"
-                                    alt=""
-                                    class="trending__main-item"
-                                />
-                                <div class="trending__main-item">1025+</div>
-                            </div>
-                            <div class="trending__info">
-                                <div class="trending__name">DSGN Animals</div>
-                                <div class="trending__author">
-                                    <img
-                                        src="https://i.seadn.io/gcs/files/60c41d23511421fc5b259f1132057846.jpg?auto=format&dpr=1&w=1000"
-                                        alt=""
-                                        class="trending__author-image"
-                                    />
-                                    <div class="trending__author-name">
-                                        MrFox
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="trending__item">
-                            <img
-                                src="https://i.seadn.io/gcs/files/60c41d23511421fc5b259f1132057846.jpg?auto=format&dpr=1&w=1000"
-                                alt=""
-                                class="trending__image-top"
-                            />
-                            <div class="trending__main">
-                                <img
-                                    src="https://i.seadn.io/gcs/files/60c41d23511421fc5b259f1132057846.jpg?auto=format&dpr=1&w=1000"
-                                    alt=""
-                                    class="trending__main-item"
-                                />
-                                <img
-                                    src="https://i.seadn.io/gcs/files/60c41d23511421fc5b259f1132057846.jpg?auto=format&dpr=1&w=1000"
-                                    alt=""
-                                    class="trending__main-item"
-                                />
-                                <div class="trending__main-item">1025+</div>
-                            </div>
-                            <div class="trending__info">
-                                <div class="trending__name">DSGN Animals</div>
-                                <div class="trending__author">
-                                    <img
-                                        src="https://i.seadn.io/gcs/files/60c41d23511421fc5b259f1132057846.jpg?auto=format&dpr=1&w=1000"
-                                        alt=""
-                                        class="trending__author-image"
-                                    />
-                                    <div class="trending__author-name">
-                                        MrFox
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="container about__container">
-                    <div class="about__info">
-                        <div class="about__title">
-                            The Premier Marketplace for NFTs
-                        </div>
-                        <div class="about__desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit.
-                        </div>
-                        <a href="#" class="button button-primary">Learn More</a>
-                    </div>
-                    <div class="about__image-list">
-                        <img
-                            src="https://cdn.dribbble.com/users/1787323/screenshots/17374479/media/b8500456e42a59d92be6338451e30bca.png?resize=640x480&vertical=center"
-                            alt=""
-                            class="about__image-item"
-                        />
-                        <img
-                            src="https://cdn.dribbble.com/userupload/2444514/file/original-0158a9088a0d837beba3fbcc4a5b97a6.png?resize=477x358&vertical=center"
-                            alt=""
-                            class="about__image-item"
-                        />
-                        <img
-                            src="https://cdn.dribbble.com/userupload/8917858/file/original-f077c372fbb4349cb99924ac8772dc5a.png?resize=752x564"
-                            alt=""
-                            class="about__image-item"
-                        />
-                    </div>
-                </div>
-            </section>
-            <!-- <section class="topcreator">
-                <div class="container">
-                    <div class="topcreator__header">
-                        <div class="topcreater__info">
-                            <div class="headline">Top creators</div>
-                            <div class="subhead">
-                                Checkout Top Rated Creators on the NFT
-                                Marketplace
-                            </div>
-                        </div>
-                        <div class="topcreater__button">
+                        <div class="banner__button">
+                            <a href="" class="button button-primary">Explore</a>
                             <a href="" class="button button-transparent"
-                                ><ion-icon name="rocket-outline"></ion-icon>
-                                View Rankings</a
+                                >Create</a
                             >
                         </div>
-                    </div>
-                    <div class="topcreator__list">
-                        <div class="topcreator__item">
-                            <img
-                                src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-98@2x.png"
-                                alt=""
-                                class="topcreator__image"
-                            />
-                            <div class="topcreator__name">Keepitreal</div>
-                            <div class="topcreator__info">
-                                <div class="topcreator__info-title">
-                                    Total Sales:
-                                </div>
-                                <div class="topcreator__info-eth">
-                                    34.53 ETH
-                                </div>
+                        <div class="banner__stats">
+                            <div class="banner__stats-item">
+                                <div class="banner__stats-data">10K</div>
+                                <div class="banner__stats-title">Artwork</div>
                             </div>
-                        </div>
-                        <div class="topcreator__item">
-                            <img
-                                src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-98@2x.png"
-                                alt=""
-                                class="topcreator__image"
-                            />
-                            <div class="topcreator__name">Keepitreal</div>
-                            <div class="topcreator__info">
-                                <div class="topcreator__info-title">
-                                    Total Sales:
-                                </div>
-                                <div class="topcreator__info-eth">
-                                    34.53 ETH
-                                </div>
+                            <div class="banner__stats-item">
+                                <div class="banner__stats-data">32K</div>
+                                <div class="banner__stats-title">Auction</div>
                             </div>
-                        </div>
-                        <div class="topcreator__item">
-                            <img
-                                src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-98@2x.png"
-                                alt=""
-                                class="topcreator__image"
-                            />
-                            <div class="topcreator__name">Keepitreal</div>
-                            <div class="topcreator__info">
-                                <div class="topcreator__info-title">
-                                    Total Sales:
-                                </div>
-                                <div class="topcreator__info-eth">
-                                    34.53 ETH
-                                </div>
-                            </div>
-                        </div>
-                        <div class="topcreator__item">
-                            <img
-                                src="https://cdn.dribbble.com/users/383277/screenshots/18055765/media/e5fc935b60035305099554810357012a.png?resize=1600x1200&vertical=center"
-                                alt=""
-                                class="topcreator__image"
-                            />
-                            <div class="topcreator__name">Keepitreal</div>
-                            <div class="topcreator__info">
-                                <div class="topcreator__info-title">
-                                    Total Sales:
-                                </div>
-                                <div class="topcreator__info-eth">
-                                    34.53 ETH
-                                </div>
-                            </div>
-                        </div>
-                        <div class="topcreator__item">
-                            <img
-                                src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-98@2x.png"
-                                alt=""
-                                class="topcreator__image"
-                            />
-                            <div class="topcreator__name">Keepitreal</div>
-                            <div class="topcreator__info">
-                                <div class="topcreator__info-title">
-                                    Total Sales:
-                                </div>
-                                <div class="topcreator__info-eth">
-                                    34.53 ETH
-                                </div>
-                            </div>
-                        </div>
-                        <div class="topcreator__item">
-                            <img
-                                src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-98@2x.png"
-                                alt=""
-                                class="topcreator__image"
-                            />
-                            <div class="topcreator__name">Keepitreal</div>
-                            <div class="topcreator__info">
-                                <div class="topcreator__info-title">
-                                    Total Sales:
-                                </div>
-                                <div class="topcreator__info-eth">
-                                    34.53 ETH
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="topcreator__item">
-                            <img
-                                src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-98@2x.png"
-                                alt=""
-                                class="topcreator__image"
-                            />
-                            <div class="topcreator__name">Keepitreal</div>
-                            <div class="topcreator__info">
-                                <div class="topcreator__info-title">
-                                    Total Sales:
-                                </div>
-                                <div class="topcreator__info-eth">
-                                    34.53 ETH
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="topcreator__item">
-                            <img
-                                src="https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-98@2x.png"
-                                alt=""
-                                class="topcreator__image"
-                            />
-                            <div class="topcreator__name">Keepitreal</div>
-                            <div class="topcreator__info">
-                                <div class="topcreator__info-title">
-                                    Total Sales:
-                                </div>
-                                <div class="topcreator__info-eth">
-                                    34.53 ETH
-                                </div>
+                            <div class="banner__stats-item">
+                                <div class="banner__stats-data">42K</div>
+                                <div class="banner__stats-title">Artist</div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section> -->
-            <!-- <section class="category">
-                <div class="container">
-                    <div class="category__header">
-                        <div class="headline">Browse Categories</div>
-                    </div>
-                    <div class="category__list">
-                        <div class="category__item">
-                            <div class="category__image">
-                                <img
-                                    src="images/cate1.png"
-                                    alt=""
-                                    class="category__image-placehoder"
-                                />
-                                <img
-                                    src="images/PaintBrush.svg"
-                                    alt=""
-                                    class="category__icon"
-                                />
-                            </div>
-                            <div class="category__name">Art</div>
+                    <div class="banner__image">
+                        <img
+                            src="https://lh3.googleusercontent.com/N3SELamgs4ueIO1AICNW6vF9ZoZXYM8PZ5suYko72P10VjuN7dVfJjKkVkwFp1BeNJs9ty7vfvuNvSCn0VtiPpufiblLNNLchkdUFg"
+                            alt=""
+                            class="banner__image-card"
+                        />
+                        <div class="banner__blur"></div>
+                        <div class="banner__bid-title">
+                            <div class="bid-now">BID NOW!</div>
+                            <div class="bid-desc">Latest Collection</div>
                         </div>
-                        <div class="category__item">
-                            <div class="category__image">
-                                <img
-                                    src="images/cate2.png"
-                                    alt=""
-                                    class="category__image-placehoder"
-                                />
-                                <img
-                                    src="images/Swatches.svg"
-                                    alt=""
-                                    class="category__icon"
-                                />
+                        <div class="banner__blur2"></div>
+                        <div class="banner__author">
+                            <img
+                                src="https://cdn.dribbble.com/userupload/4252012/file/original-10306fb6dfd0e7c86c6a643dd2dbff0d.png?resize=1504x1128"
+                                alt=""
+                                class="image-item"
+                            />
+                            <div class="author">
+                                <div class="name-item">HAPE #6959</div>
+                                <div class="name-author">HAPES PRIME</div>
                             </div>
-                            <div class="category__name">Collectibles</div>
                         </div>
-                        <div class="category__item">
-                            <div class="category__image">
-                                <img
-                                    src="images/cate3.png"
-                                    alt=""
-                                    class="category__image-placehoder"
-                                />
-                                <img
-                                    src="images/MusicNotes.svg"
-                                    alt=""
-                                    class="category__icon"
-                                />
+                        <div class="banner__bid">
+                            <div class="eth">
+                                <div class="eth-price">5.758 ETH</div>
+                                <div class="eth-title">Latest Bid</div>
                             </div>
-                            <div class="category__name">Music</div>
-                        </div>
-                        <div class="category__item">
-                            <div class="category__image">
-                                <img
-                                    src="images/cate4.png"
-                                    alt=""
-                                    class="category__image-placehoder"
-                                />
-                                <img
-                                    src="images/Camera.svg"
-                                    alt=""
-                                    class="category__icon"
-                                />
+                            <div class="price">
+                                <div class="dolar-price">$5758.31</div>
+                                <div class="growth">+12.45%</div>
                             </div>
-                            <div class="category__name">Photography</div>
-                        </div>
-                        <div class="category__item">
-                            <div class="category__image">
-                                <img
-                                    src="images/cate5.png"
-                                    alt=""
-                                    class="category__image-placehoder"
-                                />
-                                <img
-                                    src="images/VideoCamera.svg"
-                                    alt=""
-                                    class="category__icon"
-                                />
-                            </div>
-                            <div class="category__name">Video</div>
-                        </div>
-                        <div class="category__item">
-                            <div class="category__image">
-                                <img
-                                    src="images/cate6.png"
-                                    alt=""
-                                    class="category__image-placehoder"
-                                />
-                                <img
-                                    src="images/MagicWand.svg"
-                                    alt=""
-                                    class="category__icon"
-                                />
-                            </div>
-                            <div class="category__name">Utility</div>
-                        </div>
-                        <div class="category__item">
-                            <div class="category__image">
-                                <img
-                                    src="images/cate7.png"
-                                    alt=""
-                                    class="category__image-placehoder"
-                                />
-                                <img
-                                    src="images/Basketball.svg"
-                                    alt=""
-                                    class="category__icon"
-                                />
-                            </div>
-                            <div class="category__name">Sport</div>
-                        </div>
-                        <div class="category__item">
-                            <div class="category__image">
-                                <img
-                                    src="images/cate8.png"
-                                    alt=""
-                                    class="category__image-placehoder"
-                                />
-                                <img
-                                    src="images/Planet.svg"
-                                    alt=""
-                                    class="category__icon"
-                                />
-                            </div>
-                            <div class="category__name">Virtual Worlds</div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="more">
-                <div class="container more__container">
-                    <div class="more__header">
-                        <div class="more__info">
-                            <div class="headline">Discover More NFTs</div>
-                            <div class="subhead">Explore new trending NFTs</div>
-                        </div>
-                        <div class="more__button">
-                            <a href="" class="button button-transparent"
-                                ><ion-icon name="eye-outline"></ion-icon> See
-                                All</a
-                            >
-                        </div>
-                    </div>
-                    <div class="more__list card__list">
-                        <a href="" class="more__item card__item">
+            <section class="wallet">
+                <div class="container wallet__container">
+                    <img
+                        src="images/Wallet.svg"
+                        alt="Wallet Support"
+                        class="wallet__image"
+                    />
+                    <img
+                        src="images/Wallet2.png"
+                        alt="Wallet Support"
+                        class="wallet__image"
+                    />
+                    <img
+                        src="images/Wallet1.png"
+                        alt="Wallet Support"
+                        class="wallet__image"
+                    />
+                    <img
+                        src="images/Wallet3.svg"
+                        alt="Wallet Support"
+                        class="wallet__image"
+                    />
+
+                    <img
+                        src="images/Wallet4.png"
+                        alt="Wallet Support"
+                        class="wallet__image"
+                    />
+                </div>
+            </section>
+            <section class="trending">
+                <div class="container trending__container swiper mySwiper">
+                    <div class="text-title">Trending NFTs</div>
+                    <!-- Swiper -->
+                    <div class="trending__card-wrapper swiper-wrapper">
+                        <div class="trending__card-item swiper-slide">
                             <img
-                                src="https://cdn.dribbble.com/userupload/3897994/file/original-50c68d38169e80240a8fda7c73b348cd.png?resize=752x"
+                                src="images/card1.png"
                                 alt=""
-                                class="card__image"
+                                class="trending__card-image"
                             />
-                            <div class="card__main">
-                                <div class="card__name">Distant Galaxy</div>
-                                <div class="card__author">
+                            <div class="trending__author">
+                                <a href="">
                                     <img
-                                        src="https://cdn.dribbble.com/users/4053754/avatars/normal/4d256e60cab48555e57e9d33103cfc43.png?1683277656"
-                                        alt=""
-                                        class="card__author-image"
+                                        src="images/author.png"
+                                        alt="Author Image"
+                                        class="trending__author-image"
                                     />
-                                    <div class="card__author-name">
-                                        MoonDancer
-                                    </div>
-                                </div>
-                                <div class="card__info">
-                                    <div class="card__info-left">
-                                        <div class="card__info-title">
-                                            Price
-                                        </div>
-                                        <div class="card__info-price">
-                                            1.63 ETH
-                                        </div>
-                                    </div>
-                                    <div class="card__info-right">
-                                        <div class="card__info-title">
-                                            Highest Bid
-                                        </div>
-                                        <div class="card__info-price">
-                                            0.33 wETH
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="" class="more__item card__item">
-                            <img
-                                src="https://cdn.dribbble.com/userupload/3897994/file/original-50c68d38169e80240a8fda7c73b348cd.png?resize=752x"
-                                alt=""
-                                class="card__image"
-                            />
-                            <div class="card__main">
-                                <div class="card__name">Distant Galaxy</div>
-                                <div class="card__author">
-                                    <img
-                                        src="https://cdn.dribbble.com/users/4053754/avatars/normal/4d256e60cab48555e57e9d33103cfc43.png?1683277656"
-                                        alt=""
-                                        class="card__author-image"
-                                    />
-                                    <div class="card__author-name">
-                                        MoonDancer
-                                    </div>
-                                </div>
-                                <div class="card__info">
-                                    <div class="card__info-left">
-                                        <div class="card__info-title">
-                                            Price
-                                        </div>
-                                        <div class="card__info-price">
-                                            1.63 ETH
-                                        </div>
-                                    </div>
-                                    <div class="card__info-right">
-                                        <div class="card__info-title">
-                                            Highest Bid
-                                        </div>
-                                        <div class="card__info-price">
-                                            0.33 wETH
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="" class="more__item card__item">
-                            <img
-                                src="https://cdn.dribbble.com/userupload/3897994/file/original-50c68d38169e80240a8fda7c73b348cd.png?resize=752x"
-                                alt=""
-                                class="card__image"
-                            />
-                            <div class="card__main">
-                                <div class="card__name">Distant Galaxy</div>
-                                <div class="card__author">
-                                    <img
-                                        src="https://cdn.dribbble.com/users/4053754/avatars/normal/4d256e60cab48555e57e9d33103cfc43.png?1683277656"
-                                        alt=""
-                                        class="card__author-image"
-                                    />
-                                    <div class="card__author-name">
-                                        MoonDancer
-                                    </div>
-                                </div>
-                                <div class="card__info">
-                                    <div class="card__info-left">
-                                        <div class="card__info-title">
-                                            Price
-                                        </div>
-                                        <div class="card__info-price">
-                                            1.63 ETH
-                                        </div>
-                                    </div>
-                                    <div class="card__info-right">
-                                        <div class="card__info-title">
-                                            Highest Bid
-                                        </div>
-                                        <div class="card__info-price">
-                                            0.33 wETH
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="more__item card__item">
-                            <img
-                                src="https://cdn.dribbble.com/userupload/3897994/file/original-50c68d38169e80240a8fda7c73b348cd.png?resize=752x"
-                                alt=""
-                                class="card__image"
-                            />
-                            <div class="card__main">
-                                <div class="card__name">Distant Galaxy</div>
-                                <a href="author.html" class="card__author">
-                                    <img
-                                        src="https://cdn.dribbble.com/users/4053754/avatars/normal/4d256e60cab48555e57e9d33103cfc43.png?1683277656"
-                                        alt=""
-                                        class="card__author-image"
-                                    />
-                                    <div class="card__author-name">
-                                        MoonDancer
-                                    </div>
                                 </a>
-                                <div class="card__info">
-                                    <div class="card__info-left">
-                                        <div class="card__info-title">
-                                            Price
-                                        </div>
-                                        <div class="card__info-price">
-                                            1.63 ETH
-                                        </div>
+                                <div class="trending__author-info">
+                                    <a class="trending__author-title" href="">
+                                        Collection Name
+                                    </a>
+                                    <a
+                                        class="trending__author-collector"
+                                        href=""
+                                    >
+                                        @collector_name
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="trending__bottom">
+                                <div class="trending__bottom-left">
+                                    <div class="trending__left-eth">
+                                        0.45 ETH
                                     </div>
-                                    <div class="card__info-right">
-                                        <div class="card__info-title">
-                                            Highest Bid
-                                        </div>
-                                        <div class="card__info-price">
-                                            0.33 wETH
-                                        </div>
+                                    <div class="trending__left-title">
+                                        Floor Price
+                                    </div>
+                                </div>
+                                <div class="trending__bottom-right">
+                                    <div class="trending__right-price">
+                                        $345.12
+                                    </div>
+                                    <div class="trending__right-grown">
+                                        +12.45%
                                     </div>
                                 </div>
                             </div>
+                            <a
+                                href="#"
+                                class="button button-collection trending__button"
+                                >See Collection</a
+                            >
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section class="highlight">
-                <div class="highlight__bg">
-                    <div class="container highlight__container">
-                        <a href="" class="highlight__author">
+                        <div class="trending__card-item swiper-slide">
                             <img
-                                src="https://plus.unsplash.com/premium_photo-1663931932637-e30332303b71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                                src="images/card1.png"
                                 alt=""
-                                class="highlight__author-image"
+                                class="trending__card-image"
                             />
-                            <div class="highlight__author-name">Shroomie</div>
-                        </a>
-                        <div class="highlight__title">Magic Mashrooms</div>
-                        <div class="highlight__button">
-                            <a href="#" class="button button-bgwhite">
-                                <ion-icon name="eye-outline"></ion-icon> See NFT
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="work">
-                <div class="container">
-                    <div class="work__header">
-                        <div class="headline">How it works</div>
-                        <div class="subhead">Find out how to get started</div>
-                    </div>
-                    <div class="work__list">
-                        <div class="work__item">
-                            <img
-                                src="images/setup.svg"
-                                alt=""
-                                class="work__image"
-                            />
-                            <div class="work__title">Setup Your wallet</div>
-                            <div class="work__desc">
-                                Set up your wallet of choice. Connect it to the
-                                Animarket by clicking the wallet icon in the top
-                                right corner.
-                            </div>
-                        </div>
-                        <div class="work__item">
-                            <img
-                                src="images/create-colection.svg"
-                                alt=""
-                                class="work__image"
-                            />
-                            <div class="work__title">Create Collection</div>
-                            <div class="work__desc">
-                                Upload your work and setup your collection. Add
-                                a description, social links and floor price.
-                            </div>
-                        </div>
-                        <div class="work__item">
-                            <img
-                                src="images/start-earning.svg"
-                                alt=""
-                                class="work__image"
-                            />
-                            <div class="work__title">Start Earning</div>
-                            <div class="work__desc">
-                                Choose between auctions and fixed-price
-                                listings. Start earning by selling your NFTs or
-                                listings. Start earning by selling your NFTs or
-                                listings. Start earning by selling your NFTs or
-                                trading others.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="subcribe">
-                <div class="container subcribe__container">
-                    <div class="subcribe__image">
-                        <img
-                            src="images/subcribe.png"
-                            alt="Subcribe"
-                            class="subcribe__image-widget"
-                        />
-                    </div>
-                    <div class="subcribe__info">
-                        <h3 class="subcribe__title">Join our weekly digest</h3>
-                        <div class="subcribe__desc">
-                            Get exclusive promotions & updates straight to your
-                            inbox.
-                        </div>
-                        <div class="subcribe__form">
-                            <input
-                                type="text"
-                                class="subcribe__form-input"
-                                placeholder="Enter your email here"
-                            />
-                            <button class="button button-subcribe">
-                                <ion-icon name="mail-outline"></ion-icon>
-                                Subcribe
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <footer class="footer">
-                <div class="container">
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <div class="header__logo">
-                                <img
-                                    src="images/store-icon.svg"
-                                    alt=""
-                                    class="header__logo-icon"
-                                />
-                                <img
-                                    src="images/logo-text.svg"
-                                    alt=""
-                                    class="header__logo-text"
-                                />
-                            </div>
-                            <div class="footer__desc">
-                                NFT marketplace UI created with Anima for Figma.
-                            </div>
-                            <div class="footer__social">
-                                <div class="footer__social-text">
-                                    Join our community
-                                </div>
-                                <div class="footer__social-image">
-                                    <img src="images/DiscordLogo.svg" alt="" />
-                                    <img src="images/YoutubeLogo.svg" alt="" />
-                                    <img src="images/TwitterLogo.svg" alt="" />
+                            <div class="trending__author">
+                                <a href="">
                                     <img
-                                        src="images/InstagramLogo.svg"
-                                        alt=""
+                                        src="images/author.png"
+                                        alt="Author Image"
+                                        class="trending__author-image"
                                     />
+                                </a>
+                                <div class="trending__author-info">
+                                    <a class="trending__author-title" href="">
+                                        Collection Name
+                                    </a>
+                                    <a
+                                        class="trending__author-collector"
+                                        href=""
+                                    >
+                                        @collector_name
+                                    </a>
                                 </div>
                             </div>
-                        </li>
-                        <li class="footer__item">
-                            <a href="" class="footer__title">Explore</a>
-                            <a href="" class="footer__link">Marketplace</a>
-                            <a href="" class="footer__link">Rankings</a>
-                            <a href="" class="footer__link">Connect a wallet</a>
-                        </li>
-                        <li class="footer__item">
-                            <div class="footer__title">
-                                Join our weekly digest
+                            <div class="trending__bottom">
+                                <div class="trending__bottom-left">
+                                    <div class="trending__left-eth">
+                                        0.45 ETH
+                                    </div>
+                                    <div class="trending__left-title">
+                                        Floor Price
+                                    </div>
+                                </div>
+                                <div class="trending__bottom-right">
+                                    <div class="trending__right-price">
+                                        $345.12
+                                    </div>
+                                    <div class="trending__right-grown">
+                                        +12.45%
+                                    </div>
+                                </div>
                             </div>
-                            <div class="footer__link">
-                                Get exclusive promotions & updates straight to
-                                your inbox.
+                            <a
+                                href="#"
+                                class="button button-collection trending__button"
+                                >See Collection</a
+                            >
+                        </div>
+                        <div class="trending__card-item swiper-slide">
+                            <img
+                                src="images/card1.png"
+                                alt=""
+                                class="trending__card-image"
+                            />
+                            <div class="trending__author">
+                                <a href="">
+                                    <img
+                                        src="images/author.png"
+                                        alt="Author Image"
+                                        class="trending__author-image"
+                                    />
+                                </a>
+                                <div class="trending__author-info">
+                                    <a class="trending__author-title" href="">
+                                        Collection Name
+                                    </a>
+                                    <a
+                                        class="trending__author-collector"
+                                        href=""
+                                    >
+                                        @collector_name
+                                    </a>
+                                </div>
                             </div>
-                            <div class="subcribe__form">
-                                <input
-                                    type="text"
-                                    class="subcribe__form-input"
-                                    placeholder="Enter your email here"
-                                />
-                                <button class="button button-subcribe">
-                                    <ion-icon name="mail-outline"></ion-icon>
-                                    Subcribe
-                                </button>
+                            <div class="trending__bottom">
+                                <div class="trending__bottom-left">
+                                    <div class="trending__left-eth">
+                                        0.45 ETH
+                                    </div>
+                                    <div class="trending__left-title">
+                                        Floor Price
+                                    </div>
+                                </div>
+                                <div class="trending__bottom-right">
+                                    <div class="trending__right-price">
+                                        $345.12
+                                    </div>
+                                    <div class="trending__right-grown">
+                                        +12.45%
+                                    </div>
+                                </div>
                             </div>
-                        </li>
-                    </ul>
-                    <div class="footer__copyright">
-                        Ⓒ NFT Market. Use this template freely.
+                            <a
+                                href="#"
+                                class="button button-collection trending__button"
+                                >See Collection</a
+                            >
+                        </div>
+                        <div class="trending__card-item swiper-slide">
+                            <img
+                                src="images/card1.png"
+                                alt=""
+                                class="trending__card-image"
+                            />
+                            <div class="trending__author">
+                                <a href="">
+                                    <img
+                                        src="images/author.png"
+                                        alt="Author Image"
+                                        class="trending__author-image"
+                                    />
+                                </a>
+                                <div class="trending__author-info">
+                                    <a class="trending__author-title" href="">
+                                        Collection Name
+                                    </a>
+                                    <a
+                                        class="trending__author-collector"
+                                        href=""
+                                    >
+                                        @collector_name
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="trending__bottom">
+                                <div class="trending__bottom-left">
+                                    <div class="trending__left-eth">
+                                        0.45 ETH
+                                    </div>
+                                    <div class="trending__left-title">
+                                        Floor Price
+                                    </div>
+                                </div>
+                                <div class="trending__bottom-right">
+                                    <div class="trending__right-price">
+                                        $345.12
+                                    </div>
+                                    <div class="trending__right-grown">
+                                        +12.45%
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="button button-collection trending__button"
+                                >See Collection</a
+                            >
+                        </div>
+                        <div class="trending__card-item swiper-slide">
+                            <img
+                                src="images/card1.png"
+                                alt=""
+                                class="trending__card-image"
+                            />
+                            <div class="trending__author">
+                                <a href="">
+                                    <img
+                                        src="images/author.png"
+                                        alt="Author Image"
+                                        class="trending__author-image"
+                                    />
+                                </a>
+                                <div class="trending__author-info">
+                                    <a class="trending__author-title" href="">
+                                        Collection Name
+                                    </a>
+                                    <a
+                                        class="trending__author-collector"
+                                        href=""
+                                    >
+                                        @collector_name
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="trending__bottom">
+                                <div class="trending__bottom-left">
+                                    <div class="trending__left-eth">
+                                        0.45 ETH
+                                    </div>
+                                    <div class="trending__left-title">
+                                        Floor Price
+                                    </div>
+                                </div>
+                                <div class="trending__bottom-right">
+                                    <div class="trending__right-price">
+                                        $345.12
+                                    </div>
+                                    <div class="trending__right-grown">
+                                        +12.45%
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="button button-collection trending__button"
+                                >See Collection</a
+                            >
+                        </div>
+                        <div class="trending__card-item swiper-slide">
+                            <img
+                                src="images/card1.png"
+                                alt=""
+                                class="trending__card-image"
+                            />
+                            <div class="trending__author">
+                                <a href="">
+                                    <img
+                                        src="images/author.png"
+                                        alt="Author Image"
+                                        class="trending__author-image"
+                                    />
+                                </a>
+                                <div class="trending__author-info">
+                                    <a class="trending__author-title" href="">
+                                        Collection Name
+                                    </a>
+                                    <a
+                                        class="trending__author-collector"
+                                        href=""
+                                    >
+                                        @collector_name
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="trending__bottom">
+                                <div class="trending__bottom-left">
+                                    <div class="trending__left-eth">
+                                        0.45 ETH
+                                    </div>
+                                    <div class="trending__left-title">
+                                        Floor Price
+                                    </div>
+                                </div>
+                                <div class="trending__bottom-right">
+                                    <div class="trending__right-price">
+                                        $345.12
+                                    </div>
+                                    <div class="trending__right-grown">
+                                        +12.45%
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="button button-collection trending__button"
+                                >See Collection</a
+                            >
+                        </div>
+                        <div class="trending__card-item swiper-slide">
+                            <img
+                                src="images/card1.png"
+                                alt=""
+                                class="trending__card-image"
+                            />
+                            <div class="trending__author">
+                                <a href="">
+                                    <img
+                                        src="images/author.png"
+                                        alt="Author Image"
+                                        class="trending__author-image"
+                                    />
+                                </a>
+                                <div class="trending__author-info">
+                                    <a class="trending__author-title" href="">
+                                        Collection Name
+                                    </a>
+                                    <a
+                                        class="trending__author-collector"
+                                        href=""
+                                    >
+                                        @collector_name
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="trending__bottom">
+                                <div class="trending__bottom-left">
+                                    <div class="trending__left-eth">
+                                        0.45 ETH
+                                    </div>
+                                    <div class="trending__left-title">
+                                        Floor Price
+                                    </div>
+                                </div>
+                                <div class="trending__bottom-right">
+                                    <div class="trending__right-price">
+                                        $345.12
+                                    </div>
+                                    <div class="trending__right-grown">
+                                        +12.45%
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="button button-collection trending__button"
+                                >See Collection</a
+                            >
+                        </div>
                     </div>
+
+                    <div class="swiper-button-next swiper-btn"></div>
+                    <div class="swiper-button-prev swiper-btn"></div>
+
+                    <a
+                        href="#"
+                        class="trending__seemore button button-transparent button-more"
+                        >See More</a
+                    >
                 </div>
-            </footer> -->
+            </section>
+            <section class="top">
+                <div class="container top__container">
+                    <div class="text-title">Top Collections</div>
+                </div>
+            </section>
         </div>
 
-        <script src="app.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="swiper.js"></script>
     </body>
 </html>
