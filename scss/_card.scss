@@ -1,37 +1,37 @@
-.trending {
-    margin-bottom: 200px;
-    &__card {
-        &-wrapper {
-            margin-top: 50px;
-        }
-        &-item {
-            box-sizing: border-box;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
-            border-radius: 20px;
-            padding: 16px;
-            gap: 15px;
-            background: linear-gradient(
-                155.14deg,
-                rgba(0, 0, 0, 0) -2.13%,
-                rgba(255, 255, 255, 0.15) 136.58%
-            );
-            filter: drop-shadow(rgba(0, 7, 72, 0.12) 0px 4px 49px);
-            backdrop-filter: blur(7.5px);
-            border: 1.5px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.5s ease;
-            height: 380px;
-        }
-        &-image {
-            height: 210px;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 15px;
-            transition: all 0.5s ease;
-        }
+.card {
+    &__wrapper {
+        margin-top: 50px;
+    }
+    &__item {
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        border-radius: 20px;
+        padding: 16px;
+        gap: 15px;
+        background: linear-gradient(
+            155.14deg,
+            rgba(0, 0, 0, 0) -2.13%,
+            rgba(255, 255, 255, 0.15) 136.58%
+        );
+        filter: drop-shadow(rgba(0, 7, 72, 0.12) 0px 4px 49px);
+        backdrop-filter: blur(7.5px);
+        border: 1.5px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.5s ease;
+        height: 380px;
+        margin-bottom: 30px;
+        width: 270px;
+        margin-right: 30px;
+    }
+    &__image {
+        height: 210px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: all 0.5s ease;
     }
     &__author {
         display: flex;
@@ -111,10 +111,10 @@
     }
 }
 
-.trending__card-item:hover .trending__card-image {
+.card__item:hover .card__image {
     height: calc(210px - 76px);
 }
-.trending__card-item:hover .trending__button {
+.card__item:hover .card__button {
     visibility: visible;
     opacity: 1;
 }
