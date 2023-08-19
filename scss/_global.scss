@@ -240,6 +240,12 @@ body {
     text-align: center;
     display: inline-block;
     border-radius: 32px;
+    &-collection {
+        font-size: 18px;
+        border-radius: 60px;
+        font-weight: 600;
+        width: calc(100% - 50px);
+    }
 }
 
 .text-title {

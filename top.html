@@ -29,7 +29,11 @@
             nomodule
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
         ></script>
-
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
         <link rel="stylesheet" href="./scss/style.css" />
         <title>NFT Marketplace</title>
     </head>
@@ -174,10 +178,420 @@
                 </div>
             </section>
             <section class="trending">
-                <div class="container">
+                <div class="container trending__container swiper mySwiper">
                     <div class="text-title">Trending NFTs</div>
+                    <!-- Swiper -->
+                    <div class="trending__card-wrapper swiper-wrapper">
+                        <div class="trending__card-item swiper-slide">
+                            <img
+                                src="images/card1.png"
+                                alt=""
+                                class="trending__card-image"
+                            />
+                            <div class="trending__author">
+                                <a href="">
+                                    <img
+                                        src="images/author.png"
+                                        alt="Author Image"
+                                        class="trending__author-image"
+                                    />
+                                </a>
+                                <div class="trending__author-info">
+                                    <a class="trending__author-title" href="">
+                                        Collection Name
+                                    </a>
+                                    <a
+                                        class="trending__author-collector"
+                                        href=""
+                                    >
+                                        @collector_name
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="trending__bottom">
+                                <div class="trending__bottom-left">
+                                    <div class="trending__left-eth">
+                                        0.45 ETH
+                                    </div>
+                                    <div class="trending__left-title">
+                                        Floor Price
+                                    </div>
+                                </div>
+                                <div class="trending__bottom-right">
+                                    <div class="trending__right-price">
+                                        $345.12
+                                    </div>
+                                    <div class="trending__right-grown">
+                                        +12.45%
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="button button-collection trending__button"
+                                >See Collection</a
+                            >
+                        </div>
+                        <div class="trending__card-item swiper-slide">
+                            <img
+                                src="images/card1.png"
+                                alt=""
+                                class="trending__card-image"
+                            />
+                            <div class="trending__author">
+                                <a href="">
+                                    <img
+                                        src="images/author.png"
+                                        alt="Author Image"
+                                        class="trending__author-image"
+                                    />
+                                </a>
+                                <div class="trending__author-info">
+                                    <a class="trending__author-title" href="">
+                                        Collection Name
+                                    </a>
+                                    <a
+                                        class="trending__author-collector"
+                                        href=""
+                                    >
+                                        @collector_name
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="trending__bottom">
+                                <div class="trending__bottom-left">
+                                    <div class="trending__left-eth">
+                                        0.45 ETH
+                                    </div>
+                                    <div class="trending__left-title">
+                                        Floor Price
+                                    </div>
+                                </div>
+                                <div class="trending__bottom-right">
+                                    <div class="trending__right-price">
+                                        $345.12
+                                    </div>
+                                    <div class="trending__right-grown">
+                                        +12.45%
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="button button-collection trending__button"
+                                >See Collection</a
+                            >
+                        </div>
+                        <div class="trending__card-item swiper-slide">
+                            <img
+                                src="images/card1.png"
+                                alt=""
+                                class="trending__card-image"
+                            />
+                            <div class="trending__author">
+                                <a href="">
+                                    <img
+                                        src="images/author.png"
+                                        alt="Author Image"
+                                        class="trending__author-image"
+                                    />
+                                </a>
+                                <div class="trending__author-info">
+                                    <a class="trending__author-title" href="">
+                                        Collection Name
+                                    </a>
+                                    <a
+                                        class="trending__author-collector"
+                                        href=""
+                                    >
+                                        @collector_name
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="trending__bottom">
+                                <div class="trending__bottom-left">
+                                    <div class="trending__left-eth">
+                                        0.45 ETH
+                                    </div>
+                                    <div class="trending__left-title">
+                                        Floor Price
+                                    </div>
+                                </div>
+                                <div class="trending__bottom-right">
+                                    <div class="trending__right-price">
+                                        $345.12
+                                    </div>
+                                    <div class="trending__right-grown">
+                                        +12.45%
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="button button-collection trending__button"
+                                >See Collection</a
+                            >
+                        </div>
+                        <div class="trending__card-item swiper-slide">
+                            <img
+                                src="images/card1.png"
+                                alt=""
+                                class="trending__card-image"
+                            />
+                            <div class="trending__author">
+                                <a href="">
+                                    <img
+                                        src="images/author.png"
+                                        alt="Author Image"
+                                        class="trending__author-image"
+                                    />
+                                </a>
+                                <div class="trending__author-info">
+                                    <a class="trending__author-title" href="">
+                                        Collection Name
+                                    </a>
+                                    <a
+                                        class="trending__author-collector"
+                                        href=""
+                                    >
+                                        @collector_name
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="trending__bottom">
+                                <div class="trending__bottom-left">
+                                    <div class="trending__left-eth">
+                                        0.45 ETH
+                                    </div>
+                                    <div class="trending__left-title">
+                                        Floor Price
+                                    </div>
+                                </div>
+                                <div class="trending__bottom-right">
+                                    <div class="trending__right-price">
+                                        $345.12
+                                    </div>
+                                    <div class="trending__right-grown">
+                                        +12.45%
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="button button-collection trending__button"
+                                >See Collection</a
+                            >
+                        </div>
+                        <div class="trending__card-item swiper-slide">
+                            <img
+                                src="images/card1.png"
+                                alt=""
+                                class="trending__card-image"
+                            />
+                            <div class="trending__author">
+                                <a href="">
+                                    <img
+                                        src="images/author.png"
+                                        alt="Author Image"
+                                        class="trending__author-image"
+                                    />
+                                </a>
+                                <div class="trending__author-info">
+                                    <a class="trending__author-title" href="">
+                                        Collection Name
+                                    </a>
+                                    <a
+                                        class="trending__author-collector"
+                                        href=""
+                                    >
+                                        @collector_name
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="trending__bottom">
+                                <div class="trending__bottom-left">
+                                    <div class="trending__left-eth">
+                                        0.45 ETH
+                                    </div>
+                                    <div class="trending__left-title">
+                                        Floor Price
+                                    </div>
+                                </div>
+                                <div class="trending__bottom-right">
+                                    <div class="trending__right-price">
+                                        $345.12
+                                    </div>
+                                    <div class="trending__right-grown">
+                                        +12.45%
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="button button-collection trending__button"
+                                >See Collection</a
+                            >
+                        </div>
+                        <div class="trending__card-item swiper-slide">
+                            <img
+                                src="images/card1.png"
+                                alt=""
+                                class="trending__card-image"
+                            />
+                            <div class="trending__author">
+                                <a href="">
+                                    <img
+                                        src="images/author.png"
+                                        alt="Author Image"
+                                        class="trending__author-image"
+                                    />
+                                </a>
+                                <div class="trending__author-info">
+                                    <a class="trending__author-title" href="">
+                                        Collection Name
+                                    </a>
+                                    <a
+                                        class="trending__author-collector"
+                                        href=""
+                                    >
+                                        @collector_name
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="trending__bottom">
+                                <div class="trending__bottom-left">
+                                    <div class="trending__left-eth">
+                                        0.45 ETH
+                                    </div>
+                                    <div class="trending__left-title">
+                                        Floor Price
+                                    </div>
+                                </div>
+                                <div class="trending__bottom-right">
+                                    <div class="trending__right-price">
+                                        $345.12
+                                    </div>
+                                    <div class="trending__right-grown">
+                                        +12.45%
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="button button-collection trending__button"
+                                >See Collection</a
+                            >
+                        </div>
+                        <div class="trending__card-item swiper-slide">
+                            <img
+                                src="images/card1.png"
+                                alt=""
+                                class="trending__card-image"
+                            />
+                            <div class="trending__author">
+                                <a href="">
+                                    <img
+                                        src="images/author.png"
+                                        alt="Author Image"
+                                        class="trending__author-image"
+                                    />
+                                </a>
+                                <div class="trending__author-info">
+                                    <a class="trending__author-title" href="">
+                                        Collection Name
+                                    </a>
+                                    <a
+                                        class="trending__author-collector"
+                                        href=""
+                                    >
+                                        @collector_name
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="trending__bottom">
+                                <div class="trending__bottom-left">
+                                    <div class="trending__left-eth">
+                                        0.45 ETH
+                                    </div>
+                                    <div class="trending__left-title">
+                                        Floor Price
+                                    </div>
+                                </div>
+                                <div class="trending__bottom-right">
+                                    <div class="trending__right-price">
+                                        $345.12
+                                    </div>
+                                    <div class="trending__right-grown">
+                                        +12.45%
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="button button-collection trending__button"
+                                >See Collection</a
+                            >
+                        </div>
+                        <div class="trending__card-item swiper-slide">
+                            <img
+                                src="images/card1.png"
+                                alt=""
+                                class="trending__card-image"
+                            />
+                            <div class="trending__author">
+                                <a href="">
+                                    <img
+                                        src="images/author.png"
+                                        alt="Author Image"
+                                        class="trending__author-image"
+                                    />
+                                </a>
+                                <div class="trending__author-info">
+                                    <a class="trending__author-title" href="">
+                                        Collection Name
+                                    </a>
+                                    <a
+                                        class="trending__author-collector"
+                                        href=""
+                                    >
+                                        @collector_name
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="trending__bottom">
+                                <div class="trending__bottom-left">
+                                    <div class="trending__left-eth">
+                                        0.45 ETH
+                                    </div>
+                                    <div class="trending__left-title">
+                                        Floor Price
+                                    </div>
+                                </div>
+                                <div class="trending__bottom-right">
+                                    <div class="trending__right-price">
+                                        $345.12
+                                    </div>
+                                    <div class="trending__right-grown">
+                                        +12.45%
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="button button-collection trending__button"
+                                >See Collection</a
+                            >
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper-btn"></div>
+                    <div class="swiper-button-prev swiper-btn"></div>
+                    <div class="swiper-pagination pagination-btn"></div>
                 </div>
             </section>
         </div>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="swiper.js"></script>
     </body>
 </html>
