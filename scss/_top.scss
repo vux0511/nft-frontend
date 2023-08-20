@@ -1,12 +1,40 @@
 .top {
+    position: relative;
     &__card {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        margin-right: -30px;
+        margin-right: -20px;
     }
     &__item {
         width: 270px;
+    }
+    &__category {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    // &::after {
+    //     content: "";
+    //     width: 1000px;
+    //     height: 1488.907px;
+    //     position: absolute;
+    //     bottom: 80px;
+    //     border-radius: 1804.357px;
+    //     background: rgba(143, 0, 255, 0.1);
+    //     filter: blur(170px);
+    //     transform: rotate(-47.843deg);
+    //     background-color: red;
+    // }
+}
+
+@media screen and (max-width: 480px) {
+    .top {
+        &__card {
+            margin-right: 0px;
+        }
     }
 }

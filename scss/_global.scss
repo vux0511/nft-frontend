@@ -1,5 +1,7 @@
+* {
+    box-sizing: border-box;
+}
 body {
-    font-family: $font-primary;
     color: $white-color;
     font-style: normal;
     font-weight: 400;
@@ -7,7 +9,7 @@ body {
     text-transform: capitalize;
     background-color: $background-primary;
     font-size: 16px;
-    background-color: #1e2354;
+    background-color: #1a1d56;
     font-family: "Poppins", sans-serif;
 }
 
@@ -35,7 +37,7 @@ body {
     color: $white-color;
     border-radius: 60px;
     border: none;
-
+    cursor: pointer;
     &:hover {
         transform: scale(0.95);
     }
@@ -48,12 +50,29 @@ body {
         border: 2px solid $purple-color;
         background-color: transparent;
     }
+    &-category {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 45px;
+        font-style: normal;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        background-color: transparent;
+        border: 1px solid #fff;
+        opacity: 0.9;
+        &-active {
+            background: #2f80ed;
+            border: 1px solid #2f80ed;
+        }
+    }
     // &-collection {
     //     width: calc(100% - 110px);
     // }
     &-more {
         margin: 0 auto;
-        margin-top: 50px;
+        // margin-top: 50px;
         display: flex;
         align-self: center;
         justify-content: center;
@@ -70,4 +89,13 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 100px 0 50px;
+}
+
+@media screen and (max-width: 640px) {
+    .text-title {
+        font-size: 30px;
+        font-weight: 600;
+        margin: 0;
+        padding: 50px 0 30px;
+    }
 }

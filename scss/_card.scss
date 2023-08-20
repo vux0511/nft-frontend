@@ -22,9 +22,9 @@
         border: 1.5px solid rgba(255, 255, 255, 0.2);
         transition: all 0.5s ease;
         height: 380px;
-        margin-bottom: 30px;
         width: 270px;
-        margin-right: 30px;
+        margin-bottom: 30px;
+        margin-right: 20px;
     }
     &__image {
         height: 210px;
@@ -106,8 +106,10 @@
         visibility: hidden;
         opacity: 0;
         transition: all 1 ease-in-out;
-        width: calc(100% - 110px);
+        // width: calc(100% - 110px);
         text-align: center;
+        display: block;
+        width: 100%;
     }
 }
 
@@ -129,4 +131,13 @@
 .swiper-btn::before,
 .swiper-btn::after {
     font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        &__item {
+            margin: 0;
+            margin-bottom: 30px;
+        }
+    }
 }

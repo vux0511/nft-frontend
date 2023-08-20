@@ -375,3 +375,128 @@
     font-style: normal;
     font-weight: 500;
 }
+
+@media screen and (max-width: 820px) {
+    .banner {
+        &__container {
+            align-items: flex-start;
+        }
+        &__heading {
+            width: 45%;
+        }
+        &__title {
+            font-size: 40px;
+            img {
+                width: 130px;
+            }
+        }
+        &__image {
+            width: 55%;
+            &-card {
+                width: 300px;
+                height: 320px;
+            }
+        }
+        &__stats {
+            &-data {
+                font-size: 30px;
+            }
+            &-title {
+                font-size: 16px;
+            }
+        }
+        &__bid {
+            display: flex;
+            width: 210px;
+            padding: 3px 10px;
+            height: 70px;
+            left: 0px;
+            bottom: -75px;
+        }
+        &__blur2 {
+            width: 300px;
+            height: 370px;
+            right: 60px;
+        }
+        &__bid-title {
+            width: 150px;
+        }
+        &__blur {
+            width: 300px;
+        }
+        &__author {
+            display: flex;
+            width: 200px;
+            padding: 3px 10px;
+            height: 70px;
+            bottom: 0px;
+        }
+    }
+    .name-item {
+        font-size: 18px;
+    }
+    .eth-price,
+    .bid-now {
+        font-size: 18px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .banner {
+        &__container {
+            flex-direction: column;
+        }
+        &__heading,
+        &__image {
+            width: 100%;
+        }
+        &__heading {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__title {
+            text-align: center;
+            padding: 40px 0;
+        }
+        &__desc {
+            text-align: center;
+        }
+        &__image {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    .banner {
+        &__title {
+            font-size: 33px;
+            img {
+                width: 100px;
+                bottom: 0px;
+            }
+        }
+        &__stats {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            &-data {
+                font-size: 22px;
+            }
+        }
+        &__button {
+            padding-top: 20px;
+            &-small {
+                padding: 10px 30px;
+            }
+        }
+    }
+}

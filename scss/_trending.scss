@@ -127,3 +127,17 @@
 //         text-align: center;
 //     }
 // }
+// .trending {
+//     position: relative;
+//     &::after {
+//         content: "";
+//         width: 90%;
+//         height: 400px;
+//         position: absolute;
+//         bottom: 80px;
+//         border-radius: 2499.441px;
+//         background: rgba(112, 16, 187, 0.3);
+//         filter: blur(170px);
+//         transform: rotate(-5deg);
+//     }
+// }

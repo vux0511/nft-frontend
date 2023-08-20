@@ -6,10 +6,22 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 50px 115px;
-        width: 80%;
+        gap: 20px 50px;
     }
     &__image {
-        width: 230px;
+        width: 170px;
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scale(0.95);
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .wallet {
+        &__image {
+            width: 120px;
+        }
     }
 }
