@@ -51,7 +51,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             word-break: break-word;
-            color: white;
+            color: $white-color;
         }
         &-collector {
             font-size: 13px;
@@ -99,7 +99,7 @@
         &-grown {
             font-size: 14px;
             font-weight: 400;
-            color: #24ff00;
+            color: $green-color;
         }
     }
     &__button {
@@ -126,7 +126,7 @@
     width: 50px;
     height: 50px;
     border-radius: 100rem;
-    background: white;
+    background: $white-color;
 }
 .swiper-btn::before,
 .swiper-btn::after {

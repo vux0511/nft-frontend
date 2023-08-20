@@ -21,7 +21,7 @@
     &__item {
         &-link {
             text-decoration: none;
-            color: white;
+            color: $white-color;
             font-size: 18px;
             font-weight: 400;
             line-height: normal;
@@ -36,7 +36,7 @@
             display: block;
             width: 0;
             height: 1.5px;
-            background: white;
+            background: $white-color;
             transition: width 0.3s;
         }
     }
@@ -73,7 +73,7 @@
             right: 0;
             bottom: 0;
             width: 80%;
-            background-color: #1a1d56;
+            background-color: $background;
             z-index: 9999;
             border-left: 1px solid #ccc;
             padding: 2rem 1rem;

@@ -1,5 +1,4 @@
 .subcribe {
-    // background-color: #1c214a;
     padding-bottom: 60px;
     &__text {
         &-more {
@@ -33,7 +32,7 @@
         background-color: transparent;
         color: #333;
         font-size: 18px;
-        font-family: "Poppins", sans-serif;
+        font-family: $font-primary;
     }
 }
 

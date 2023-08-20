@@ -50,7 +50,7 @@
         justify-content: center;
         gap: 10px;
         text-align: center;
-        color: #d3d3d3;
+        color: #e5e5e5;
         padding-bottom: 20px;
     }
     &__title {
@@ -59,7 +59,7 @@
         padding-bottom: 30px;
     }
     &__link {
-        color: white;
+        color: $white-color;
         padding-bottom: 20px;
     }
 }
