@@ -1,10 +1,14 @@
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 20,
-    loop: true,
     centerSlide: "true",
     fade: "true",
     grabCursor: "true",
+    loop: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
